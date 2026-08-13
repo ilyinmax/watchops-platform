@@ -1,0 +1,7 @@
+2026-08-07T11:01:20 ERROR target=example.org status=503 latency_ms=1988
+2026-08-07T11:03:00 ERROR target=github.com status=500 latency_ms=950
+2026-08-07T11:05:00 ERROR target=example.org status=503 latency_ms=2100
+      2 target=example.org
+      1 target=github.com
+      2 status=503
+      1 status=500
