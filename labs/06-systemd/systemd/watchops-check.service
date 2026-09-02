@@ -1,0 +1,9 @@
+[Unit]
+Description=WatchOps scheduled health check
+
+[Service]
+Type=oneshot
+User=maxim
+ExecStart=/home/maxim/watchops-systemd-lab/scripts/watchops-check.sh
+StandardOutput=append:/var/log/watchops-lab/check.log
+StandardError=append:/var/log/watchops-lab/check.log

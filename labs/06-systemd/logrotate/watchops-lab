@@ -1,0 +1,9 @@
+/var/log/watchops-lab/check.log {
+    daily
+    rotate 5
+    compress
+    delaycompress
+    missingok
+    notifempty
+    create 0640 maxim maxim
+}

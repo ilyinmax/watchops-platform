@@ -1,0 +1,16 @@
+[Unit]
+Description=Broken WatchOps boss service
+After=network.target
+
+[Service]
+Type=simple
+User=maxim
+WorkingDirectory=/home/maxim/watchops-systemd-lab/boss
+Environment=WATCHOPS_MODE=production
+Environment=WATCHOPS_INTERVAL=4
+ExecStart=/home/maxim/watchops-systemd-lab/boss/boss-stub.sh
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

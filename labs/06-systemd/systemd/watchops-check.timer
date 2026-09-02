@@ -1,0 +1,10 @@
+[Unit]
+Description=Run WatchOps health check periodically
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=2min
+Unit=watchops-check.service
+
+[Install]
+WantedBy=timers.target

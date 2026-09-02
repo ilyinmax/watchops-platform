@@ -1,0 +1,15 @@
+[Unit]
+Description=WatchOps systemd lab stub
+After=network.target
+
+[Service]
+Type=simple
+User=maxim
+WorkingDirectory=/home/maxim/watchops-systemd-lab/app
+Environment=WATCHOPS_INTERVAL=5
+ExecStart=/home/maxim/watchops-systemd-lab/app/watchops-stub.sh
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
