@@ -1,1 +1,2 @@
 enabled=api,metrics
+enabled=api,health
