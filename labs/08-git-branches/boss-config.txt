@@ -1,1 +1,1 @@
-enabled=api
+enabled=api,health
