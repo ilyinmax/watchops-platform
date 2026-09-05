@@ -1,1 +1,1 @@
-enabled=api,metrics
+enabled=api
