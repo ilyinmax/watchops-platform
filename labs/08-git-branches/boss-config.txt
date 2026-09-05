@@ -1,2 +1,1 @@
-enabled=api,metrics
-enabled=api,health
+enabled=api,metrics,health
